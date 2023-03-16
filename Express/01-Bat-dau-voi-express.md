@@ -73,3 +73,5 @@ nodemon npm start
 ```
 địa chỉ chạy web mặc định là:  http://localhost:3000 
 
+## View template engine 
+https://ejs.co/ 
