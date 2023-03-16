@@ -50,3 +50,24 @@ sau đó chạy lệnh sau để  khởi động server
 nodemon node index.js
 ```
 
+## Sử dụng Express generator
+
+Chạy lệnh sau để cài express về máy tính
+```
+npm install -g express-generator 
+```
+chạy lệnh sau để tạo project 
+```
+express --view=ejs thuc-hanh-exp
+```
+trong đó: thuc-hanh-exp là tên project bạn  muốn tạo
+Tiếp theo chạy lệnh để cài node module
+```
+npm install
+```
+Chạy lệnh sau để bắt đầu start project
+```
+ npm start
+// nếu có nodemon thì bạn thêm nodemon vào  trước
+nodemon npm start
+```
