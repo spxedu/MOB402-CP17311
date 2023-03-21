@@ -25,24 +25,24 @@ var router = express.Router();
 // nhúng controller 
 var sanphamController = require('../controllers/sanpham.controller');
 
-router.get('/list', sanphamController.getListSanPham  );
+router.get('/', sanphamController.getListSanPham  );
 
 module.exports = router;
 
-// http://localhost:3000/sp/list
+// http://localhost:3000/sp
 ```
 
 ## 4. Khai  báo router trong file app.js
 
 Viết lệnh sau ở phía trước dòng var app = express();
 ```
-var sanphmRouter = require('./routes/sanpham');
+var spRouter = require('./routes/sanpham');
 ```
 
  Viết lệnh sau ở phía dưới lệnh app.use('/', indexRouter);
 ```
-app.use('/sp', sanphmRouter);
+app.use('/sp', spRouter);
 ```
 ## 5. Chạy ung dung 
 
-http://localhost:3000/sp/list
+http://localhost:3000/sp
