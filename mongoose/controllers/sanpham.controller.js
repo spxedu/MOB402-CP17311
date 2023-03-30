@@ -29,7 +29,7 @@ exports.add = async (req, res, next)=>{
             console.log(new_sp);
             msg = 'Đã thêm thành công';
         } catch (error) {
-            msg = 'Lỗi '+ error.message();
+            msg = 'Lỗi '+ error.message;
             console.log(error);
         }
     }
