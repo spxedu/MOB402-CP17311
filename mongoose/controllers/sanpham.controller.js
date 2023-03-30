@@ -3,7 +3,7 @@ var myMD = require('../models/sanpham.model');
 exports.list = async (req, res, next)=>{
     // tạo chức năng lọc dữ liệu trên danh sách
     let dieu_kien_loc = null;
-    if(typeof( req.query.price != 'undefined')){
+    if(typeof( req.query.price )   != 'undefined'){
         dieu_kien_loc = { price: req.query.price };
     }
     
