@@ -1,0 +1,30 @@
+<%- include('../inc/top') %>
+
+<h1>Danh sách </h1>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>ID</th>  
+         <th>Name</th>  
+          <th>Price</th>  
+           <th>Desc</th>
+           <th>The loai</th>
+    </tr>
+    <% listSP.forEach( (row )=>{    %>
+
+            <tr>
+                <td> <%= row._id  %> </td>
+                <td> <%= row.name  %> </td>
+                <td> <%= row.price  %> </td>
+                <td> <%= row.description  %> </td>
+                <td> <%= row.id_theloai.name  %> </td>
+            </tr>
+
+    <%   }  )  %>
+
+</table>
+
+
+
+
+<%- include('../inc/bottom') %>

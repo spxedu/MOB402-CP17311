@@ -1,0 +1,26 @@
+<%- include('../inc/top', {tieu_de: "Thêm mới SP"}) %>
+<h1>Thêm mới</h1>
+
+<%= msg  %>
+
+<form action="" method="post">
+
+    <select name="theloai">
+        <% listTL.forEach(  row => {    %>
+            <option value="<%= row._id %>"> <%= row.name  %> </option>
+
+        <%    } )  %>
+
+    </select> <br>
+
+
+    <input type="text" name="name" placeholder="Tên SP"> <br>
+    <input type="number" name="price" placeholder="Giá"> <br>
+    <button type="submit"> Save </button>
+</form>
+
+
+
+
+
+<%- include('../inc/bottom') %>
