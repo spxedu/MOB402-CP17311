@@ -24,8 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: 'NHKDNGHaksfsndfhaiserkndv834be23sdhf21gsb',
   resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
+  saveUninitialized: true 
 }))
 
 
